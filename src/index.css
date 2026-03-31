@@ -1,0 +1,109 @@
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.product-card {
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #f3f4f6;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-top {
+  transition: transform 0.5s ease;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.price-tag {
+  color: #4f46e5;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.btn-custom {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-custom:hover {
+  filter: brightness(110%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.btn-outline-custom {
+  border: 2px solid #e5e7eb;
+  color: #4b5563;
+  border-radius: 8px;
+  font-weight: 500;
+  background: white;
+}
+
+.btn-outline-custom:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  color: #1f2937;
+}
+
+.badge-category {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4b5563;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-transform: capitalize;
+  backdrop-filter: blur(4px);
+}
